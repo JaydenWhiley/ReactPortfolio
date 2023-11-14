@@ -8,7 +8,7 @@ export default () => {
         <img src={ProfilePicture} className="max-w-full max-h-full rounded-full object-cover self-center" />;
       </div>
       <div className="p-5 flex flex-col justify-center items-center">
-        <TextBody className="text-3xl mb-3 drop-shadow-lg">Jayden Whiley</TextBody>
+        <TextBody className="text-3xl mb-1 sm:mb-3 drop-shadow-lg">Jayden Whiley</TextBody>
         <TextBody>Software Engineer</TextBody>
         <TextBody>B.E.E | QUT</TextBody>
         <TextBody>Australia</TextBody>

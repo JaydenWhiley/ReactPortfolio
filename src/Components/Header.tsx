@@ -1,3 +1,9 @@
+interface HeaderAction {
+  Title: string;
+}
+
+const actions: HeaderAction[] = [{ Title: "home" }, { Title: "resume" }, { Title: "github" }, { Title: "linkedin" }];
+
 export default () => {
   return (
     <div
@@ -11,10 +17,11 @@ export default () => {
         display: "flex",
         justifyContent: "space-between",
       }}>
-      <span>home</span>
-      <span>resume</span>
-      <span>github</span>
-      <span>linkedIn</span>
+      {actions.map((x) => (
+        <span className="text-xl sm:text-2xl lg:text-3xl" id={"headerAction_" + x.Title}>
+          {x.Title}
+        </span>
+      ))}
     </div>
   );
 };

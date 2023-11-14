@@ -10,13 +10,11 @@ import Controls from "./Components/Controls";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <>
-      <DashContainer>
-        <Header />
-        <DashCard />
-        <Controls />
-        <Footer />
-      </DashContainer>
-    </>
+    <DashContainer>
+      <Header />
+      <DashCard />
+      <Controls />
+      <Footer />
+    </DashContainer>
   </React.StrictMode>
 );

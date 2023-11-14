@@ -5,7 +5,7 @@ import NavigationIcon from "../icons/DPadIcon.svg?react";
 
 export default () => {
   return (
-    <div className="ml-2 mt-5 flex flex-row">
+    <div className="ml-2 mt-5 hidden lg:flex flex-row">
       <HoverButton className="flex flex-row mr-10">
         <Button>
           <TextBody style={{ opacity: 0.8, textShadow: "rgb(187, 187, 187) 3px 1px 3px, rgb(255, 255, 255) -1px 2px 5px" }} className="text-3xl">

@@ -1,11 +1,10 @@
 export default () => {
   return (
     <div
+      className="text-xs sm:text-base mt-1 lg:mt-3"
       style={{
         fontFamily: "Aspria",
-        fontSize: 14,
         opacity: 0.6,
-        marginTop: 50,
         padding: 10,
         color: "white",
         display: "flex",
