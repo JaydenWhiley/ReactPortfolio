@@ -1,6 +1,5 @@
-import styled from "@emotion/styled";
-import ProfilePicture from "./ProfilePicture.jpg";
-import { TextBody } from "../Components/Typography";
+import ProfilePicture from "../images/ProfilePicture.jpg";
+import { TextBody } from "./Typography";
 
 export default () => {
   return (
@@ -17,9 +16,3 @@ export default () => {
     </>
   );
 };
-
-const MyImage = styled.img({
-  // borderRadius: "50%",
-  // maxHeight: "100%",
-  // background: `url('${ProfilePicture}')`,
-});

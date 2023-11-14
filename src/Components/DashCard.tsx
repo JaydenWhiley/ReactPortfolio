@@ -4,8 +4,8 @@ import ResumeIcon from "../icons/ResumeIcon.svg?react";
 import XboxIcon from "../icons/XboxLogo.svg?react";
 import SkillsIcon from "../icons/SkillsIcon.svg?react";
 
-import Typography, { TextBody } from "./Typography";
-import Profile from "../images/profile";
+import { TextBody } from "./Typography";
+import Profile from "./Profile";
 
 export default () => (
   <div className="relative w-full pb-[50%]">
