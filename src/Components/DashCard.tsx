@@ -2,6 +2,8 @@ import styled from "@emotion/styled";
 import ProjectsIcon from "../icons/ProjectsIcon.svg?react";
 import ResumeIcon from "../icons/ResumeIcon.svg?react";
 import XboxIcon from "../icons/XboxLogo.svg?react";
+import SkillsIcon from "../icons/SkillsIcon.svg?react";
+
 import Typography, { TextBody } from "./Typography";
 import Profile from "../images/profile";
 
@@ -14,8 +16,8 @@ export default () => (
           <TextBody className="p-2 text-xl">Resume</TextBody>
         </DashSquare>
         <DashSquare className="flex flex-col col-start-1 col-end-2 row-start-2 row-end-3">
-          <ProjectsIcon title="Projects" />
-          <TextBody className="p-2 text-xl">Projects</TextBody>
+          <SkillsIcon title="Skills" />
+          <TextBody className="p-2 text-xl">Skills</TextBody>
         </DashSquare>
 
         <DashSquare className="col-start-2 col-end-4 row-start-1 row-end-4 mb-1">
@@ -23,8 +25,8 @@ export default () => (
         </DashSquare>
 
         <DashSquare className="flex flex-col col-start-4 col-end-5 row-start-1 row-end-2">
-          <XboxIcon />
-          <TextBody className="p-2 text-xl">Hobbies</TextBody>
+          <ProjectsIcon title="Projects" />
+          <TextBody className="p-2 text-xl">Projects</TextBody>
         </DashSquare>
         <DashSquare className="flex flex-col col-start-4 col-end-5 row-start-2 row-end-3">
           <XboxIcon title="Hobbies" />
@@ -45,5 +47,7 @@ const DashSquare = styled.div({
   },
   "&:active": {
     opacity: 0.5,
+    transform: "scale(0.95)",
   },
+  transition: "transform 0.1s ease",
 });
