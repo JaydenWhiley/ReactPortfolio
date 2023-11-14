@@ -13,12 +13,10 @@ export default () => (
       <div className="absolute top-0 left-0 right-0 bottom-0">
         <div className="flex lg:flex-row flex-col h-full">
           <FirstSection className="lg:flex-col flex-row">
-            <a href="/Jayden_Whiley_CV.pdf">
-              <DashSquare className="flex flex-col">
-                <ResumeIcon title="Resume" />
-                <TextBody className="p-2 text-xl">Resume</TextBody>
-              </DashSquare>
-            </a>
+            <DashSquare onClick={() => (window.location.href = "/Jayden_Whiley_CV.pdf")} className="flex flex-col">
+              <ResumeIcon title="Resume" />
+              <TextBody className="p-2 text-xl">Resume</TextBody>
+            </DashSquare>
             <DashSquare className="flex flex-col">
               <SkillsIcon title="Skills" />
               <TextBody className="p-2 text-xl">Skills</TextBody>
